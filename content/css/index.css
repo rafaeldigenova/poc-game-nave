@@ -1,0 +1,128 @@
+body, html{
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	text-align: center;
+	position:relative;
+	background-color:antiquewhite;
+	padding:0;
+	margin:0;
+}	
+
+body:after{
+	content:'';
+	display:inline-block;
+	height:100%;
+	vertical-align: middle;
+}
+
+.canvas-container{
+	width:100%;
+	height:auto;
+	max-width: 800px;
+	max-height:600px;
+	display: inline-block;
+	position:relative;
+	vertical-align: middle;
+}
+
+canvas{
+	display:inline-block;
+	background-color:white;
+	width:100%;
+	height: auto;
+
+}
+
+.hud{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events:none;
+}
+
+.hud .modal{
+	
+	position:absolute;
+	width:100%;
+	height:100%;
+    background: repeating-linear-gradient( -45deg, 
+	    rgba(188, 191, 194,0.4) 0px,
+	    rgba(188, 191, 194,0.4) 0px,
+	    rgba(255, 255, 255,0.2) 1px,
+	    rgba(255, 255, 255,0.2) 1px );
+	text-align: center;   
+	pointer-events:all;
+}
+
+.hud .modal:before{
+	content:'';
+	display:inline-block;
+	height:100%;
+	vertical-align: middle;
+}
+
+.hud .modal .modal-content{
+	background-color:rgb(255,255,255);
+	width:70%;
+	height:70%;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius:20px;
+}
+
+.hud .modal .modal-content:after{
+	content:'';
+	display:inline-block;
+	height:100%;
+	vertical-align: middle;
+}
+
+.modal-content .modal-form{
+	display: inline-block;
+	min-width:300px;
+}
+
+.modal-content .modal-form input[type=text]{
+	width:100%;
+	font-size:16px;
+	padding:5px 15px;
+	margin:5px;
+	border-radius:10px;
+	border: 1px solid rgba(126,126,126,0.5);
+}
+
+.modal-content .modal-form input[type=submit]{
+	width:50%;
+	padding:5px 15px;
+	font-size:16px;
+	background-color:rgb(67,150,240);
+	margin:5px;
+	border-radius:10px;
+	border: 1px solid rgba(126,126,126,0.5);
+	color:white;
+}
+
+.modal .sucumbiu-container{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.modal .sucumbiu-container span{
+	font-size:25px;
+	display: block;
+}
+
+.modal .sucumbiu-container span:hover{
+	cursor: pointer;
+}
+
+.modal .sucumbiu{
+	display: none;
+	font-size: 56px;
+	text-align: center;
+	color:black;
+	font-weight: bolder;
+}

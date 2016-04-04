@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf=8" />
+		<title>Jogo nave xisto</title>
+		<link rel="stylesheet" href="/css/index.css" />
+			
+	</head>
+	<body>
+		<div class="canvas-container">
+			<canvas width="800" height="600" id="meuCanvas" >
+				Seu browser não da suporte a canvas
+			</canvas>
+			<div class="hud">
+				<div class="modal" id="modal">
+					<div class="modal-content">
+						<div class="modal-form" id="modal-form">
+							<input type="text" id="confirma-nome-text" placeholder="Digite seu nome!" />
+							<input type="submit" id="confirma-nome" href="javascript:void(0)" />
+						</div>
+						<div class="sucumbiu-container" id="sucumbiu-container">
+							<div class="sucumbiu" id="sucumbiu">
+								SUCUMBIU!
+								<span id="reiniciar-jogo">Reiniciar</span>
+							</div>   
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="/socket.io/socket.io.js"></script>
+        <script src="/js/calcHelper.js"></script>
+        <script src="/js/naveHelper.js"></script>
+        <script src="/js/tiroHelper.js"></script>
+		<script src="/js/tiro.js"></script>
+		<script src="/js/nave.js"></script>
+		<script src="/js/game.js"></script>
+	</body>
+</html>
